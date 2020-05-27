@@ -1,5 +1,6 @@
 provider "github" {
-  individual = true
+  organization = ""
+  individual   = true
 }
 resource "tls_private_key" "deploy_key" {
   algorithm = "RSA"
