@@ -5,10 +5,10 @@ resource "tls_private_key" "deploy_key" {
 
 resource "local_file" "private_key" {
   content  = tls_private_key.deploy_key.private_key_pem
-  filename = "${path.module}/generated_keys/${var.name}_deploy_key.pem"
+  filename = "${path.root}/generated_keys/${var.name}_deploy_key.pem"
 }
 
 resource "local_file" "public_key" {
   content  = tls_private_key.deploy_key.public_key_openssh
-  filename = "${path.module}/generated_keys/${var.name}_deploy_key.pub"
+  filename = "${path.root}/generated_keys/${var.name}_deploy_key.pub"
 }
