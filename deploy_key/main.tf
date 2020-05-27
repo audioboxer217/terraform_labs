@@ -1,6 +1,5 @@
 provider "github" {
-  organization = ""
-  individual   = true
+  organization = "codaglobal" 
 }
 resource "tls_private_key" "deploy_key" {
   algorithm = "RSA"
