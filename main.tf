@@ -1,3 +1,7 @@
+provider "github" {
+  organization = "codaglobal"
+}
+
 terraform {
   backend "remote" {
     hostname     = "app.terraform.io"
