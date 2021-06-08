@@ -1,5 +1,5 @@
 provider "github" {
-  organization = "codaglobal"
+  owner = "codaglobal"
 }
 
 terraform {
