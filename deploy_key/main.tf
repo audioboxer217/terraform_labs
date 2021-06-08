@@ -1,6 +1,3 @@
-provider "github" {
-  organization = "codaglobal" 
-}
 resource "tls_private_key" "deploy_key" {
   algorithm = "RSA"
   rsa_bits  = "4096"
